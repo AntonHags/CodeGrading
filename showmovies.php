@@ -20,3 +20,5 @@ if ($result->num_rows > 0) {
 
 echo '</table>';
 ?>
+
+<a href="insert.php">Lägg till film</a>

@@ -20,4 +20,4 @@ echo "Hello! Please enter the details of the movie you've watched.";
     <input type="submit" value="Add Movie">
 </form>
 
-<!-- Länk till showmovies.php? -->
+<a href="showmovies.php">Visa filmer</a> <!-- Länk till showmovies.php? -->
