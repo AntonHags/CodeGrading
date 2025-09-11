@@ -1,8 +1,8 @@
+<?php
 #get_data.php
 #The showmovies.php page should lists all movies that have been 
 #entered in the database up until that moment as an HTML Table Tag.
 
-<?php
 include 'db.php';
 
 echo '<table><tr><th>mid</th><th>mname</th><th>myear</th><th>mgenreid</th><th>mrating</th></tr>';
