@@ -1,0 +1,2 @@
+#db.php -- is the php code to connect to the MySQL database. It should be called many times whenever it is needed, therefore it is defined in a separate file 
+#and the other files can just call it by  (include 'db.php';).
