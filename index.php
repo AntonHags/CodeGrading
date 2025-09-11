@@ -9,6 +9,11 @@
 # mrating
 
 echo "hello";
+
+?>
+
+<!DOCTYPE html>
+
 <form action="insert.php" method="POST">
     Movie Name:<input type="text" name="mname"><br>
     Movie Year:<input type="text" name="myear"><br>
@@ -16,4 +21,3 @@ echo "hello";
     Movie Rating:<input type="text" name="mrating"><br>
     <input type="submit" value="Add">
 </form>
-?>
