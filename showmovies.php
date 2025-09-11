@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<a href="index.php">Lägg till film</a>
+
 <?php
 #get_data.php
 #The showmovies.php page should lists all movies that have been 
@@ -20,5 +23,3 @@ if ($result->num_rows > 0) {
 
 echo '</table>';
 ?>
-
-<a href="insert.php">Lägg till film</a>

@@ -1,23 +1,48 @@
-
-<?php
-echo "Hello! Please enter the details of the movie you've watched.";
-?>
-
 <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Min sida</title>
+    <link rel="stylesheet" href="format.css">
+</head>
 
-<form action="insert.php" method="POST">
-    Movie Name:<input type="text" name="mname"><br>
-    Movie Year:<input type="text" name="myear"><br>
-    Movie Genre:
-    <select name="mgenre" id="mgenre">
-        <option value="1">Action/Adventure</option>
-        <option value="2">Comedy</option>
-        <option value="3">Drama</option>
-        <option value="4">Fantasy/Sci-Fi</option>
-    </select>
-    <br>  
-    Movie Rating:<input type="text" name="mrating"><br> <!-- Drop-down här också? -->
-    <input type="submit" value="Add Movie">
-</form>
+<div class="container">
+    <body>
+    <?php
+    echo "<h1>Hello!</h1><br>
+    <p>Please enter the details of the movie you've watched:</p>";
+    ?>
 
-<a href="showmovies.php">Visa filmer</a> <!-- Länk till showmovies.php? -->
+    <form action="insert.php" method="POST">
+        <label>Movie Name:</label>
+        <input type="text" name="mname"><br>
+
+        <label>Movie Year:</label>
+        <input type="text" name="myear"><br>
+
+        <label>Movie Genre:</label>
+        <select name="mgenre" id="mgenre">
+            <option value="1">Action/Adventure</option>
+            <option value="2">Comedy</option>
+            <option value="3">Drama</option>
+            <option value="4">Fantasy/Sci-Fi</option>
+        </select>
+        <br>
+
+        <label>Movie Rating:</label>
+        <select name="mrating" id="mrating">
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select>
+        <br>
+
+        <input type="submit" value="Add Movie">
+    </form><br>
+
+    <a href="showmovies.php" class="btn">Show Movies</a>
+
+    </body>
+</div>
+</html>
