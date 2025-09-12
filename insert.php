@@ -1,8 +1,5 @@
 <?php
 
-
-<?php
-
 #Insertdata.php
 
 #insert.php -- is the php code to receive the input from index.php
@@ -14,7 +11,6 @@ include 'db.php';
 
 // Fetch data from POST request
 $mname = $_POST['mname'];
-
 $myear = $_POST['mnyear'];
 $mgenre = $_POST['mgenre'];
 $mrating = $_POST['mrating'];
