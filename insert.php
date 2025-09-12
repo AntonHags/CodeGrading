@@ -26,6 +26,9 @@ if ($result) {
 } else {
     echo "Error: " . $stmt->error;
 }
+
+
+
 // Close the database connection
 $link->close();
 ?>
