@@ -28,8 +28,6 @@ if ($result) {
     $message = "Error: " . $stmt->error;
 }
 
-
-
 // Close the database connection
 $link->close();
 ?>
