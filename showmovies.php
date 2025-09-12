@@ -15,7 +15,7 @@ $result = $link->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        echo "<tr> <td>" . $row["mid"] . "</td><td>" . $row["mname"] . "</td><td>" . $row["myear"] . "</td><td>" . $row["mgenreid"] . "</td><td>" . $row["mratingx"] . "</td></tr>";
+        echo "<tr> <td>" . $row["mid"] . "</td><td>" . $row["mname"] . "</td><td>" . $row["myear"] . "</td><td>" . $row["mgenreid"] . "</td><td>" . $row["mrating"] . "</td></tr>";
     }
 } else {
     echo "0 results";
