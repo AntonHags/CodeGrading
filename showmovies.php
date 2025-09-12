@@ -8,7 +8,7 @@
 
 include 'db.php';
 
-echo '<table><tr><th>mid</th><th>mname</th><th>myear</th><th>mgenreid</th><th>mrating</th></tr>';
+echo '<table><tr><th>Movie ID</th><th>Movie Name</th><th>Release Year</th><th>Genre ID</th><th>Rating</th></tr>';
 
 $sql = "SELECT * FROM `movies`";
 $result = $link->query($sql);

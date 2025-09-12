@@ -14,11 +14,11 @@ $myear = $_POST['myear'];
 $mgenre = $_POST['mgenre'];
 $mrating = $_POST['mrating'];
 
-$sql = "INSERT INTO movies (mname, myear, mgenre, mrating) VALUES (?, ?, ?, ?)";
+$sql = "INSERT INTO movies (mname, myear, mgenreid, mrating) VALUES (?, ?, ?, ?)";
 $stmt = $link->prepare($sql);
 
-// s for string
-$stmt->bind_param("ssss", $mname, $myear, $mgenre, $mrating);
+// s for string i for integer
+$stmt->bind_param("ssii", $mname, $myear, $mgenre, $mrating);
 $result = $stmt->execute();
 
 if ($result) {
@@ -26,7 +26,7 @@ if ($result) {
 } else {
     echo "Error: " . $stmt->error;
 }
-
 // Close the database connection
 $link->close();
 ?>
+
