@@ -16,7 +16,7 @@ $sql = "SELECT m.mid, m.mname, m.myear, g.mgenre, m.mrating
 
 $result = $link->query($sql);
 
-if ($result->num_rows > 0) {
+if ($result->num_rows > 0) { // this if statement is not needed
     while($row = $result->fetch_assoc()) {
         echo "<tr>
                 <td>" . $row["mid"] . "</td>
