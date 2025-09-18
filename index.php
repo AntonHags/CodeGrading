@@ -29,7 +29,10 @@
             Something like this; -->
             <?php while ($row = $link->assoc.array){
                         echo'direct text' "embedding variables, code, etc".}
-                ?>
+                // you need to fetch the genres dynamically, not statically, pls fix
+                            ?>
+                            
+                
         </select>
         <br>
 
