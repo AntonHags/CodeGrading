@@ -7,9 +7,9 @@
 -- Serverversion: 5.7.24
 -- PHP-version: 8.3.1
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO"; -- what does this do? 
+START TRANSACTION; -- what does this do?
+SET time_zone = "+00:00"; -- why is this needed?
 
 ----
 
