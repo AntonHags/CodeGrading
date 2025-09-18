@@ -21,10 +21,15 @@
 
         <label>Movie Genre:</label>
         <select name="mgenre" id="mgenre">
+            <!-- Rather than this; 
             <option value="1">Action/Adventure</option>
             <option value="2">Comedy</option>
             <option value="3">Drama</option>
             <option value="4">Fantasy/Sci-Fi</option>
+            Something like this; -->
+            <?php while ($row = $link->assoc.array){
+                        echo'direct text' "embedding variables, code, etc".}
+                ?>
         </select>
         <br>
 
