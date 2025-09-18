@@ -43,6 +43,7 @@
             <option value="3">3</option>
             <option value="2">2</option>
             <option value="1">1</option>
+            <!-- think of better way to do this, e.g. iterate over a range 1-5 and put those in options --> 
         </select>
         <br>
 
