@@ -16,8 +16,8 @@ $sql = "SELECT m.mid, m.mname, m.myear, g.mgenre, m.mrating
 
 $result = $link->query($sql);
 
-if ($result->num_rows > 0) { // this if statement is not needed
-    while($row = $result->fetch_assoc()) { // here you are doing some dynamic 
+
+while($row = $result->fetch_assoc()) { // here you are doing some dynamic 
                                           // php data fetching from the backend, use 
                                           // this as example for the genre selection on the 
                                           // frontend
@@ -28,9 +28,6 @@ if ($result->num_rows > 0) { // this if statement is not needed
                 <td>" . $row["mgenre"] . "</td>
                 <td>" . $row["mrating"] . "</td>
               </tr>";
-    }
-} else {
-    echo "0 results";
 }
 
 echo '</table>';
