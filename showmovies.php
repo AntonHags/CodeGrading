@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <a href="index.php">Add movie</a>
 
 <?php
@@ -17,10 +18,7 @@ $sql = "SELECT m.mid, m.mname, m.myear, g.mgenre, m.mrating
 $result = $link->query($sql);
 
 
-while($row = $result->fetch_assoc()) { // here you are doing some dynamic 
-                                          // php data fetching from the backend, use 
-                                          // this as example for the genre selection on the 
-                                          // frontend
+while($row = $result->fetch_assoc()) { 
         echo "<tr>
                 <td>" . $row["mid"] . "</td>
                 <td>" . $row["mname"] . "</td>
